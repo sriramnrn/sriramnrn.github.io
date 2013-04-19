@@ -12,3 +12,17 @@ Read my [earlier blog posts](http://dynamicproxy.livejournal.com)
 
 I'm reviving the Belenix project again - starting off with website hosting using github pages for now and to be followed by a CI system and then mailing lists.
 
+## My presentations
+
+[Continuous Integration for Open Source Distributions](http://www.slideshare.net/sriramnrn/continuous-integration-for-open-source-distros-v-30)
+
+[Build your own SAN](http://www.slideshare.net/sriramnrn/build-your-own-san) [Video] (www.youtube.com/watch?v=Zdk1lnMvBv4)
+
+Ways to reach me:
+
+Twitter : @sriramnrn
+
+Email: sriramnrn at gmail
+
+LinkedIn: http://in.linkedin.com/in/sriramnrn
+
