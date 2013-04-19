@@ -26,5 +26,4 @@ Twitter :
 
 Email: sriramnrn at gmail
 
-[LinkedIn](http://in.linkedin.com/in/sriramnrn)
-<a href="http://in.linkedin.com/in/sriramnrn"><img src="http://www.linkedin.com/img/webpromo/btn_viewmy_120x33.png" width="120" height="33" border="0" alt="View Sriram Narayanan's profile on LinkedIn"></a>
+LinkedIn [http://in.linkedin.com/in/sriramnrn](http://in.linkedin.com/in/sriramnrn)
