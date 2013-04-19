@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Index
-tagline: Learning all the time
+title: Welcome
+tagline: I'm a Belenix Developer, Thoughtworker, Musician and Marksman, with an interest in OpenStack, Illumos and Continuous Delivery
 ---
 
 Read my [earlier blog posts](http://dynamicproxy.livejournal.com)
