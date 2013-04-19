@@ -4,17 +4,9 @@ title: Welcome
 tagline: 
 ---
 
-I'm a Belenix Developer, Thoughtworker, Musician and Marksman, with an interest in OpenStack, Illumos and Continuous Delivery
+I'm a [Belenix Developer](http://en.wikipedia.org/wiki/Belenix), [Thoughtworker](http://www.thoughtworks.com), Musician and Marksman, with an interest in [OpenStack](http://www.openstack.org), [Illumos](http://illumos.org) and am [Continuous Delivery](http://www.continuousdelivery.com) practitioner.
 
 Read my [earlier blog posts](http://dynamicproxy.livejournal.com)
-
-Ways to reach me:
-
-Twitter : @sriramnrn
-
-Email: sriramnrn at gmail
-
-LinkedIn: http://in.linkedin.com/in/sriramnrn
 
 Belenix News
 I'm reviving the Belenix project again - starting with Continuous Integration for the basic system.
