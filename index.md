@@ -8,7 +8,7 @@ I'm a [Belenix Developer](http://en.wikipedia.org/wiki/Belenix), [Thoughtworker]
 
 Read my [earlier blog posts](http://dynamicproxy.livejournal.com)
 
-Belenix News
-I'm reviving the Belenix project again - starting with Continuous Integration for the basic system.
-I'm starting off with website hosting - using github pages for now. This will be followed by a CI system and then mailing lists.
+##Belenix News
+
+I'm reviving the Belenix project again - starting off with website hosting using github pages for now and to be followed by a CI system and then mailing lists.
 
