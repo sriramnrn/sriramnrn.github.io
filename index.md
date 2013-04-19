@@ -20,7 +20,9 @@ I'm reviving the Belenix project again - starting off with website hosting using
 
 Ways to reach me:
 
-Twitter : @sriramnrn
+Twitter :
+<a href="https://twitter.com/sriramnrn" class="twitter-follow-button" data-show-count="false">Follow @sriramnrn</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
 Email: sriramnrn at gmail
 
