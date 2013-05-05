@@ -4,7 +4,7 @@ title: Welcome
 tagline: 
 ---
 
-I'm a [Belenix Developer](http://www.belenix.org/), [Thoughtworker](http://www.thoughtworks.com), Musician and Marksman, with an interest in [OpenStack](http://www.openstack.org), [Illumos](http://illumos.org) and I'm a [Continuous Delivery](http://www.continuousdelivery.com) practitioner.
+I'm a [Belenix Developer](http://www.belenix.org/), a [Thoughtworker](http://www.thoughtworks.com), a [Continuous Delivery](http://www.continuousdelivery.com) practitioner, a Musician and a Marksman, with an interest in [OpenStack](http://www.openstack.org), [Illumos](http://illumos.org) and [DTrace] (www.dtrace.org).
 
 Read my [earlier blog posts](http://dynamicproxy.livejournal.com)
 
