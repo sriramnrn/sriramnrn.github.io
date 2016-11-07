@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Post-rsses on Sriram Narayanan - The Sky is not the limit</title>
+    <link>https://www.sriramnarayanan.com/post/index.xml</link>
+    <description>Recent content in Post-rsses on Sriram Narayanan - The Sky is not the limit</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Sriram Narayanan</copyright>
+    <lastBuildDate>Mon, 07 Nov 2016 23:46:39 +0800</lastBuildDate>
+    <atom:link href="https://www.sriramnarayanan.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>migrating to a static website</title>
+      <link>https://www.sriramnarayanan.com/migrating-to-a-static-website</link>
+      <pubDate>Mon, 07 Nov 2016 23:46:39 +0800</pubDate>
+      
+      <guid>https://www.sriramnarayanan.com/migrating-to-a-static-website</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve decided to try static website hosting using Hugo.&lt;/p&gt;
+
+&lt;p&gt;My earlier blog can be accessed &lt;a href=&#34;http://dynamicproxy.livejournal.com&#34;&gt;here&lt;/a&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
