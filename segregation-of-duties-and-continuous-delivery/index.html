@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-    <title>migrating to a static website &middot; Sriram Narayanan - The Sky is not the limit</title>
+    <title>segregation of duties and continuous delivery &middot; Sriram Narayanan - The Sky is not the limit</title>
     <meta name="generator" content="Hugo 0.18.1" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -10,7 +10,7 @@
       <meta name="description" content="Ram&#39;s blog posts">
     
     
-    <link rel="canonical" href="http://www.sriramnarayanan.com/migrating-to-a-static-website"/>
+    <link rel="canonical" href="http://www.sriramnarayanan.com/segregation-of-duties-and-continuous-delivery"/>
 	<link rel="apple-touch-icon" sizes="57x57" href="css/images/favicons/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="css/images/favicons/apple-icon-60x60.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="css/images/favicons/apple-icon-72x72.png">
@@ -36,16 +36,31 @@
     
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
-    <meta property="og:title" content="migrating to a static website" />
-<meta property="og:description" content="I&rsquo;ve decided to try static website hosting using Hugo.
+    <meta property="og:title" content="segregation of duties and continuous delivery" />
+<meta property="og:description" content="Today, I presented on &ldquo;Segregation of Duties and Continuous Delivery&rdquo; at the DevSecCon Singapore 2017.
 
-My earlier blog can be accessed here
+
+ 
+
+
+here
+
+The talk was well received.
+
+As per the wikipedia article on [https://en.wikipedia.org/wiki/Separation_of_duties], &ldquo; In business the separation by sharing of more than one individual in one single task is an internal control intended to prevent fraud and error.&rdquo;
+
+In the I.T. space, the approaches for implementing Segregation of Duties are very defensive in nature. While the objectives of SoD are arguably achieved, the present enforcement approaches slow down the overall time from code commit to production deployment. This prevent effective Continuous Delivery.
+
+In my talk, I present the intent, the current approaches, and my recommended alternative approaches.
+
+This talk with be one of the chapters of my upcoming book on Security and Continuous Delivery.
+
 " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://www.sriramnarayanan.com/migrating-to-a-static-website" />
+<meta property="og:url" content="http://www.sriramnarayanan.com/segregation-of-duties-and-continuous-delivery" />
 
 
-<meta property="og:updated_time" content="2016-11-07T23:46:39&#43;08:00"/>
+<meta property="og:updated_time" content="2017-02-23T14:25:36&#43;08:00"/>
 
 
 
@@ -58,15 +73,30 @@ My earlier blog can be accessed here
 
     
     
-<meta itemprop="name" content="migrating to a static website">
-<meta itemprop="description" content="I&rsquo;ve decided to try static website hosting using Hugo.
+<meta itemprop="name" content="segregation of duties and continuous delivery">
+<meta itemprop="description" content="Today, I presented on &ldquo;Segregation of Duties and Continuous Delivery&rdquo; at the DevSecCon Singapore 2017.
 
-My earlier blog can be accessed here
+
+ 
+
+
+here
+
+The talk was well received.
+
+As per the wikipedia article on [https://en.wikipedia.org/wiki/Separation_of_duties], &ldquo; In business the separation by sharing of more than one individual in one single task is an internal control intended to prevent fraud and error.&rdquo;
+
+In the I.T. space, the approaches for implementing Segregation of Duties are very defensive in nature. While the objectives of SoD are arguably achieved, the present enforcement approaches slow down the overall time from code commit to production deployment. This prevent effective Continuous Delivery.
+
+In my talk, I present the intent, the current approaches, and my recommended alternative approaches.
+
+This talk with be one of the chapters of my upcoming book on Security and Continuous Delivery.
+
 ">
 
 
-<meta itemprop="dateModified" content="2016-11-07T23:46:39&#43;08:00" />
-<meta itemprop="wordCount" content="16">
+<meta itemprop="dateModified" content="2017-02-23T14:25:36&#43;08:00" />
+<meta itemprop="wordCount" content="130">
 
 
 
@@ -78,10 +108,25 @@ My earlier blog can be accessed here
 
 
 
-<meta name="twitter:title" content="migrating to a static website"/>
-<meta name="twitter:description" content="I&rsquo;ve decided to try static website hosting using Hugo.
+<meta name="twitter:title" content="segregation of duties and continuous delivery"/>
+<meta name="twitter:description" content="Today, I presented on &ldquo;Segregation of Duties and Continuous Delivery&rdquo; at the DevSecCon Singapore 2017.
 
-My earlier blog can be accessed here
+
+ 
+
+
+here
+
+The talk was well received.
+
+As per the wikipedia article on [https://en.wikipedia.org/wiki/Separation_of_duties], &ldquo; In business the separation by sharing of more than one individual in one single task is an internal control intended to prevent fraud and error.&rdquo;
+
+In the I.T. space, the approaches for implementing Segregation of Duties are very defensive in nature. While the objectives of SoD are arguably achieved, the present enforcement approaches slow down the overall time from code commit to production deployment. This prevent effective Continuous Delivery.
+
+In my talk, I present the intent, the current approaches, and my recommended alternative approaches.
+
+This talk with be one of the chapters of my upcoming book on Security and Continuous Delivery.
+
 "/>
 <meta name="twitter:site" content="@sriramnrn"/>
 
@@ -297,17 +342,17 @@ My earlier blog can be accessed here
             
 
             <header class="article-header">
-    <a href="http://www.sriramnarayanan.com/migrating-to-a-static-website">
+    <a href="http://www.sriramnarayanan.com/segregation-of-duties-and-continuous-delivery">
     <h1 class="article-title" itemprop="name">
-        migrating to a static website
+        segregation of duties and continuous delivery
     </h1>
     </a>
     <div class="article-meta">
         <div class="article-date">
             <i class="fa fa-calendar"></i>
-            <time datetime="2016-11-07 23:46:39 &#43;0800 SGT" itemprop="datePublished">2016-11-07</time>
+            <time datetime="2017-02-23 14:25:36 &#43;0800 SGT" itemprop="datePublished">2017-02-23</time>
             &middot;
-            16
+            130
             words
             &middot;
             1
@@ -328,18 +373,33 @@ My earlier blog can be accessed here
 </header>
 
             <div class="article-entry" itemprop="articleBody">
-                <p>I&rsquo;ve decided to try static website hosting using Hugo.</p>
+                <p>Today, I presented on &ldquo;Segregation of Duties and Continuous Delivery&rdquo; at the DevSecCon Singapore 2017.</p>
 
-<p>My earlier blog can be accessed <a href="http://dynamicproxy.livejournal.com">here</a>
-</p>
+<div class="embed slideshare">
+<iframe src="http://www.slideshare.net/slideshow/embed_code/key/vHeYikkW2pCi9J" width="599" height="487" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen> </iframe>
+</div>
+
+<p><a href="http://dynamicproxy.livejournal.com">here</a></p>
+
+<p>The talk was well received.</p>
+
+<p>As per the wikipedia article on [<a href="https://en.wikipedia.org/wiki/Separation_of_duties">https://en.wikipedia.org/wiki/Separation_of_duties</a>], &ldquo; In business the separation by sharing of more than one individual in one single task is an internal control intended to prevent fraud and error.&rdquo;</p>
+
+<p>In the I.T. space, the approaches for implementing Segregation of Duties are very defensive in nature. While the objectives of SoD are arguably achieved, the present enforcement approaches slow down the overall time from code commit to production deployment. This prevent effective Continuous Delivery.</p>
+
+<p>In my talk, I present the intent, the current approaches, and my recommended alternative approaches.</p>
+
+<p>This talk with be one of the chapters of my upcoming book on Security and Continuous Delivery.</p>
+
+<p></p>
             </div>
             <footer class="article-footer">
-    <a data-url="http://www.sriramnarayanan.com/migrating-to-a-static-website" data-id="f4fad477dcf784a6340ec8a72b125d06" class="article-share-link">
+    <a data-url="http://www.sriramnarayanan.com/segregation-of-duties-and-continuous-delivery" data-id="fc631dfd0772a61e40001fada0fba969" class="article-share-link">
         <i class="fa fa-share"></i>
         Share
     </a>
     
-    <a href="http://www.sriramnarayanan.com/migrating-to-a-static-website/#disqus_thread" class="article-comment-link">
+    <a href="http://www.sriramnarayanan.com/segregation-of-duties-and-continuous-delivery/#disqus_thread" class="article-comment-link">
         Comments
     </a>
     
@@ -415,14 +475,14 @@ My earlier blog can be accessed here
         
 <nav id="article-nav">
     
-
-    
-    <a href="http://www.sriramnarayanan.com/segregation-of-duties-and-continuous-delivery" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="http://www.sriramnarayanan.com/migrating-to-a-static-website" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">
-          Newer
+          Older
       </strong>
-      <div class="article-nav-title">segregation of duties and continuous delivery</div>
+      <div class="article-nav-title">migrating to a static website</div>
     </a>
+    
+
     
 </nav>
 
@@ -435,9 +495,9 @@ My earlier blog can be accessed here
             <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'sriramnarayanan';
-    var disqus_identifier = 'http:\/\/www.sriramnarayanan.com\/migrating-to-a-static-website';
-    var disqus_title = 'migrating to a static website';
-    var disqus_url = 'http:\/\/www.sriramnarayanan.com\/migrating-to-a-static-website';
+    var disqus_identifier = 'http:\/\/www.sriramnarayanan.com\/segregation-of-duties-and-continuous-delivery';
+    var disqus_title = 'segregation of duties and continuous delivery';
+    var disqus_url = 'http:\/\/www.sriramnarayanan.com\/segregation-of-duties-and-continuous-delivery';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
