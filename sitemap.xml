@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://www.sriramnarayanan.com/post/</loc>
+    <lastmod>2017-02-23T14:25:36+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.sriramnarayanan.com/segregation-of-duties-and-continuous-delivery/</loc>
     <lastmod>2017-02-23T14:25:36+08:00</lastmod>
   </url>
@@ -21,58 +26,13 @@
   </url>
   
   <url>
-    <loc>http://www.sriramnarayanan.com/books/agile-for-executives/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.sriramnarayanan.com/books/beyond-localhost/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.sriramnarayanan.com/books/consulting-lessons-vol-1/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.sriramnarayanan.com/books/from-ops-to-devops/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.sriramnarayanan.com/books/gocd-in-the-enterprise/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.sriramnarayanan.com/books/going-digital/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.sriramnarayanan.com/books/how-illumos-zones-work/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.sriramnarayanan.com/books/journey-to-continuous-delivery/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.sriramnarayanan.com/books/journey-to-trunk-based-development/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.sriramnarayanan.com/books/moving-to-the-cloud/</loc>
-  </url>
-  
-  <url>
-    <loc>http://www.sriramnarayanan.com/books/segregation-of-duties-and-continuous-delivery/</loc>
-  </url>
-  
-  <url>
     <loc>http://www.sriramnarayanan.com/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.sriramnarayanan.com/post/</loc>
-    <lastmod>2017-02-23T14:25:36+08:00</lastmod>
-    <priority>0</priority>
+    <loc>http://www.sriramnarayanan.com/search/</loc>
+    <priority>0.1</priority>
   </url>
   
   <url>
