@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-    <title>segregation of duties and continuous delivery &middot; Sriram Narayanan - The Sky is not the limit</title>
+    <title> &middot; Sriram Narayanan - The Sky is not the limit</title>
     <meta name="generator" content="Hugo 0.51" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -10,7 +10,10 @@
       <meta name="description" content="Ram&#39;s blog posts">
     
     
-    <link rel="canonical" href="http://www.sriramnarayanan.com/segregation-of-duties-and-continuous-delivery/"/>
+      <link href="http://www.sriramnarayanan.com/about/index.xml" rel="alternate" type="application/rss+xml" title="Sriram Narayanan - The Sky is not the limit" />
+      <link href="http://www.sriramnarayanan.com/about/index.xml" rel="feed" type="application/rss+xml" title="Sriram Narayanan - The Sky is not the limit" />
+    
+    <link rel="canonical" href="http://www.sriramnarayanan.com/about/"/>
     <link rel="icon" href="http://www.sriramnarayanan.com/favicon.ico">
     <link rel="apple-touch-icon" href="http://www.sriramnarayanan.com/apple-touch-icon.png"/>
     <link rel="stylesheet" href="http://www.sriramnarayanan.com/css/style.css">
@@ -20,71 +23,20 @@
     
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
-    <meta property="og:title" content="segregation of duties and continuous delivery" />
-<meta property="og:description" content="Today, I presented on &ldquo;Segregation of Duties and Continuous Delivery&rdquo; at the DevSecCon Singapore 2017.
-
-
- 
-
-
-The talk was well received.
-
-As per the wikipedia article on [https://en.wikipedia.org/wiki/Separation_of_duties], &ldquo; In business the separation by sharing of more than one individual in one single task is an internal control intended to prevent fraud and error.&rdquo;
-
-In the I.T. space, the approaches for implementing Segregation of Duties are very defensive in nature. While the objectives of SoD are arguably achieved, the present enforcement approaches slow down the overall time from code commit to production deployment. This prevent effective Continuous Delivery.
-
-In my talk, I present the intent, the current approaches, and my recommended alternative approaches.
-
-This talk with be one of the chapters of my upcoming book on Security and Continuous Delivery." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="http://www.sriramnarayanan.com/segregation-of-duties-and-continuous-delivery/" /><meta property="article:published_time" content="2017-02-23T14:25:36&#43;08:00"/>
-<meta property="article:modified_time" content="2017-02-23T14:25:36&#43;08:00"/>
+    <meta property="og:title" content="" />
+<meta property="og:description" content="Sriram Narayanan" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://www.sriramnarayanan.com/about/" />
 
     
     
-<meta itemprop="name" content="segregation of duties and continuous delivery">
-<meta itemprop="description" content="Today, I presented on &ldquo;Segregation of Duties and Continuous Delivery&rdquo; at the DevSecCon Singapore 2017.
+<meta itemprop="name" content="">
+<meta itemprop="description" content="Sriram Narayanan">
 
-
- 
-
-
-The talk was well received.
-
-As per the wikipedia article on [https://en.wikipedia.org/wiki/Separation_of_duties], &ldquo; In business the separation by sharing of more than one individual in one single task is an internal control intended to prevent fraud and error.&rdquo;
-
-In the I.T. space, the approaches for implementing Segregation of Duties are very defensive in nature. While the objectives of SoD are arguably achieved, the present enforcement approaches slow down the overall time from code commit to production deployment. This prevent effective Continuous Delivery.
-
-In my talk, I present the intent, the current approaches, and my recommended alternative approaches.
-
-This talk with be one of the chapters of my upcoming book on Security and Continuous Delivery.">
-
-
-<meta itemprop="datePublished" content="2017-02-23T14:25:36&#43;08:00" />
-<meta itemprop="dateModified" content="2017-02-23T14:25:36&#43;08:00" />
-<meta itemprop="wordCount" content="129">
-
-
-
-<meta itemprop="keywords" content="" />
 
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="segregation of duties and continuous delivery"/>
-<meta name="twitter:description" content="Today, I presented on &ldquo;Segregation of Duties and Continuous Delivery&rdquo; at the DevSecCon Singapore 2017.
-
-
- 
-
-
-The talk was well received.
-
-As per the wikipedia article on [https://en.wikipedia.org/wiki/Separation_of_duties], &ldquo; In business the separation by sharing of more than one individual in one single task is an internal control intended to prevent fraud and error.&rdquo;
-
-In the I.T. space, the approaches for implementing Segregation of Duties are very defensive in nature. While the objectives of SoD are arguably achieved, the present enforcement approaches slow down the overall time from code commit to production deployment. This prevent effective Continuous Delivery.
-
-In my talk, I present the intent, the current approaches, and my recommended alternative approaches.
-
-This talk with be one of the chapters of my upcoming book on Security and Continuous Delivery."/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="Sriram Narayanan"/>
 <meta name="twitter:site" content="@sriramnrn"/>
 
     
@@ -317,14 +269,17 @@ This talk with be one of the chapters of my upcoming book on Security and Contin
 
     <section id="main">
     
-    <article id="page-undefined" class="article article-type-page" itemscope="" itemprop="blogPost">
+    
+    
+    
+        <article id="page-undefined" class="article article-type-page" itemscope="" itemprop="blogPost">
     <div class="article-inner">
         
 
         <header class="article-header">
-    <a href="http://www.sriramnarayanan.com/segregation-of-duties-and-continuous-delivery/">
+    <a href="http://www.sriramnarayanan.com/about/">
     <h1 class="article-title" itemprop="name">
-        segregation of duties and continuous delivery
+        
     </h1>
     </a>
     <div class="article-meta">
@@ -332,9 +287,9 @@ This talk with be one of the chapters of my upcoming book on Security and Contin
         
         <div class="article-date">
             <i class="fa fa-calendar"></i>
-            <time datetime="2017-02-23 14:25:36 &#43;0800 &#43;08" itemprop="datePublished">2017-02-23</time>
+            <time datetime="0001-01-01 00:00:00 &#43;0000 UTC" itemprop="datePublished">0001-01-01</time>
             &middot;
-            129
+            9
             words
             &middot;
             1
@@ -354,24 +309,10 @@ This talk with be one of the chapters of my upcoming book on Security and Contin
 </header>
 
         <div class="article-entry" itemprop="articleBody">
-            <p>Today, I presented on &ldquo;Segregation of Duties and Continuous Delivery&rdquo; at the DevSecCon Singapore 2017.</p>
-
-<div class="embed slideshare">
-<iframe src="http://www.slideshare.net/slideshow/embed_code/key/vHeYikkW2pCi9J" width="599" height="487" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen> </iframe>
-</div>
-
-<p>The talk was well received.</p>
-
-<p>As per the wikipedia article on [<a href="https://en.wikipedia.org/wiki/Separation_of_duties">https://en.wikipedia.org/wiki/Separation_of_duties</a>], &ldquo; In business the separation by sharing of more than one individual in one single task is an internal control intended to prevent fraud and error.&rdquo;</p>
-
-<p>In the I.T. space, the approaches for implementing Segregation of Duties are very defensive in nature. While the objectives of SoD are arguably achieved, the present enforcement approaches slow down the overall time from code commit to production deployment. This prevent effective Continuous Delivery.</p>
-
-<p>In my talk, I present the intent, the current approaches, and my recommended alternative approaches.</p>
-
-<p>This talk with be one of the chapters of my upcoming book on Security and Continuous Delivery.</p>
+            <p>I&rsquo;m a musician, a maintainer of Belenix (at belenix.io),</p>
         </div>
         <footer class="article-footer">
-    <a data-url="http://www.sriramnarayanan.com/segregation-of-duties-and-continuous-delivery/" data-id="7865e170783b5dedf9d8ae91925992ac" class="article-share-link">
+    <a data-url="http://www.sriramnarayanan.com/about/" data-id="a69934980f795699f7cc4d8a50a604b2" class="article-share-link">
         <i class="fa fa-share"></i>
         Share
     </a>
@@ -446,23 +387,11 @@ This talk with be one of the chapters of my upcoming book on Security and Contin
     </div>
 
     
-<nav id="article-nav">
-    
-    <a href="http://www.sriramnarayanan.com/migrating-to-a-static-website/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">
-          Older
-      </strong>
-      <div class="article-nav-title">migrating to a static website</div>
-    </a>
-    
-
-    
-</nav>
-
 
 </article>
 
 
+    
 
     </section>
 
