@@ -13,11 +13,6 @@
   </url>
   
   <url>
-    <loc>http://www.sriramnarayanan.com/post/</loc>
-    <lastmod>2017-02-23T14:25:36+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://www.sriramnarayanan.com/segregation-of-duties-and-continuous-delivery/</loc>
     <lastmod>2017-02-23T14:25:36+08:00</lastmod>
   </url>
@@ -36,13 +31,13 @@
   </url>
   
   <url>
-    <loc>http://www.sriramnarayanan.com/categories/agile/</loc>
+    <loc>http://www.sriramnarayanan.com/tags/agile/</loc>
     <lastmod>2017-08-23T16:15:26+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.sriramnarayanan.com/tags/agile/</loc>
+    <loc>http://www.sriramnarayanan.com/categories/agile/</loc>
     <lastmod>2017-08-23T16:15:26+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -73,6 +68,12 @@
   
   <url>
     <loc>http://www.sriramnarayanan.com/tags/migration/</loc>
+    <lastmod>2018-10-09T22:15:21+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.sriramnarayanan.com/post/</loc>
     <lastmod>2018-10-09T22:15:21+08:00</lastmod>
     <priority>0</priority>
   </url>
