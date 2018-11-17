@@ -194,7 +194,7 @@
     </div>
     <div class="article-info profile-block">
       <div class="article-info-block">
-        4
+        5
         <span>Posts</span>
       </div>
       <div class="article-info-block">
@@ -457,7 +457,7 @@
             <i class="fa fa-calendar"></i>
             <time datetime="2017-08-23 16:15:26 &#43;0800 &#43;08" itemprop="datePublished">2017-08-23</time>
             &middot;
-            1050
+            1065
             words
             &middot;
             5
@@ -500,7 +500,9 @@
 
         <div class="article-entry" itemprop="articleBody">
             <p>
-                <p>Among the many practices that people start to follow when they decide to &ldquo;go agile&rdquo;, is the daily standup.</p>
+                <p>See my <a href="http://www.sriramnarayanan.com/talk-on-standups/">slide deck</a> that I usually use when giving a talk on this topic.</p>
+
+<p>Among the many practices that people start to follow when they decide to &ldquo;go agile&rdquo;, is the daily standup.</p>
 
 <p>Jason Yip&rsquo;s article on <a href="https://martinfowler.com/articles/itsNotJustStandingUp.html">standups</a> is often considered the reference article (that&rsquo;s me in the red t-shirt in that pic).</p>
 
@@ -516,6 +518,152 @@
         </div>
         <footer class="article-footer">
     <a data-url="http://www.sriramnarayanan.com/some-standup-anti-patterns/" data-id="ef9c9ad61c88601a9aca6b46aad5c522" class="article-share-link">
+        <i class="fa fa-share"></i>
+        Share
+    </a>
+    
+
+    <script>
+    (function ($) {
+        
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+    </script>
+</footer>
+
+    </div>
+</article>
+
+<article class="article article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+        </a>
+
+        <header class="article-header">
+    <a href="http://www.sriramnarayanan.com/talk-on-standups/">
+    <h1 class="article-title" itemprop="name">
+        Talk - On Standups
+    </h1>
+    </a>
+    <div class="article-meta">
+
+        
+        <div class="article-date">
+            <i class="fa fa-calendar"></i>
+            <time datetime="2017-08-23 16:15:26 &#43;0800 &#43;08" itemprop="datePublished">2017-08-23</time>
+            &middot;
+            23
+            words
+            &middot;
+            1
+            minute read
+        </div>
+        
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-folder"></i>
+                
+                
+                <a class="article-category-link" href="http://www.sriramnarayanan.com/categories/agile">agile</a>
+                
+                
+            </div>
+            
+        
+
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-tags"></i>
+                
+                
+                <a class="article-category-link" href="http://www.sriramnarayanan.com/tags/agile">agile</a>
+                &middot;
+                
+                
+                <a class="article-category-link" href="http://www.sriramnarayanan.com/tags/standups">standups</a>
+                
+                
+            </div>
+            
+        
+    </div>
+</header>
+
+        <div class="article-entry" itemprop="articleBody">
+            <p>
+                Here is the slide deck to a popular talk that I give on standups. I recommend that you also read the accompanying article.
+  
+            </p>
+            <p class="article-more-link">
+                <a href="http://www.sriramnarayanan.com/talk-on-standups/">
+                    Read more
+                </a>
+            </p>
+        </div>
+        <footer class="article-footer">
+    <a data-url="http://www.sriramnarayanan.com/talk-on-standups/" data-id="65656769976d62e0b61ba0767ff77794" class="article-share-link">
         <i class="fa fa-share"></i>
         Share
     </a>
@@ -924,6 +1072,32 @@
             
             <li>
                 <div class="item-thumbnail">
+                    <a href="http://www.sriramnarayanan.com/talk-on-standups/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="http://www.sriramnarayanan.com/categories/agile">
+                        agile
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="http://www.sriramnarayanan.com/talk-on-standups/" class="title">Talk - On Standups</a></p>
+                    <p class="item-date">
+                        <time datetime="2017-08-23 16:15:26 &#43;0800 &#43;08" itemprop="datePublished">2017-08-23</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
                     <a href="http://www.sriramnarayanan.com/segregation-of-duties-and-continuous-delivery/" class="thumbnail">
                     
                         <span class="thumbnail-image thumbnail-none"></span>
@@ -978,7 +1152,7 @@
                 <a class="category-list-link" href="http://www.sriramnarayanan.com/categories/agile">
                     agile
                 </a>
-                <span class="category-list-count">1</span>
+                <span class="category-list-count">2</span>
             </li>
             
             <li class="category-list-item">
@@ -1011,7 +1185,7 @@
                 <a class="category-list-link" href="http://www.sriramnarayanan.com/tags/agile">
                     agile
                 </a>
-                <span class="category-list-count">1</span>
+                <span class="category-list-count">2</span>
             </li>
             
             <li class="category-list-item">
@@ -1043,7 +1217,7 @@
                 <a class="category-list-link" href="http://www.sriramnarayanan.com/tags/standups">
                     standups
                 </a>
-                <span class="category-list-count">1</span>
+                <span class="category-list-count">2</span>
             </li>
             
         </ul>
