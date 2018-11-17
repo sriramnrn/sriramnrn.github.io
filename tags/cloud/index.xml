@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cloud on Sriram Narayanan - The Sky is not the limit</title>
+    <link>http://www.sriramnarayanan.com/tags/cloud/</link>
+    <description>Recent content in Cloud on Sriram Narayanan - The Sky is not the limit</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 09 Oct 2018 22:15:21 +0800</lastBuildDate>
+    
+	<atom:link href="http://www.sriramnarayanan.com/tags/cloud/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Talk - Migrating your IT policies to the Cloud</title>
+      <link>http://www.sriramnarayanan.com/talk-migrating-your-it-policies-to-the-cloud/</link>
+      <pubDate>Tue, 09 Oct 2018 22:15:21 +0800</pubDate>
+      
+      <guid>http://www.sriramnarayanan.com/talk-migrating-your-it-policies-to-the-cloud/</guid>
+      <description>&lt;p&gt;Today, I presented at Cloud Asia Singapore 2018 on the topic &amp;ldquo;Migrating your IT policies to the Cloud&amp;rdquo;.&lt;/p&gt;
+
+&lt;div class=&#34;embed slideshare&#34;&gt;
+&lt;iframe src=&#34;http://www.slideshare.net/slideshow/embed_code/key/ukaHptF8S02RqQ&#34; width=&#34;599&#34; height=&#34;487&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px&#34; allowfullscreen webkitallowfullscreen mozallowfullscreen&gt; &lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Moving to the Cloud is more than just getting an account at a public cloud. Even a lift and shift approach needs quite some thought to the design.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

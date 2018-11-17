@@ -27,7 +27,7 @@
 <meta property="og:description" content="Sriram Narayanan" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://www.sriramnarayanan.com/" />
-<meta property="og:updated_time" content="2017-02-23T14:25:36&#43;08:00"/>
+<meta property="og:updated_time" content="2018-10-09T22:15:21&#43;08:00"/>
 
     
     
@@ -194,12 +194,12 @@
     </div>
     <div class="article-info profile-block">
       <div class="article-info-block">
-        2
+        4
         <span>Posts</span>
       </div>
       <div class="article-info-block">
         
-          0
+          5
         
         <span>
             Tags
@@ -283,6 +283,312 @@
     <section id="main">
     
     
+
+<article class="article article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+        </a>
+
+        <header class="article-header">
+    <a href="http://www.sriramnarayanan.com/talk-migrating-your-it-policies-to-the-cloud/">
+    <h1 class="article-title" itemprop="name">
+        Talk - Migrating your IT policies to the Cloud
+    </h1>
+    </a>
+    <div class="article-meta">
+
+        
+        <div class="article-date">
+            <i class="fa fa-calendar"></i>
+            <time datetime="2018-10-09 22:15:21 &#43;0800 &#43;08" itemprop="datePublished">2018-10-09</time>
+            &middot;
+            262
+            words
+            &middot;
+            2
+            minute read
+        </div>
+        
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-folder"></i>
+                
+                
+                <a class="article-category-link" href="http://www.sriramnarayanan.com/categories/management">management</a>
+                
+                
+            </div>
+            
+        
+
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-tags"></i>
+                
+                
+                <a class="article-category-link" href="http://www.sriramnarayanan.com/tags/cloud">cloud</a>
+                &middot;
+                
+                
+                <a class="article-category-link" href="http://www.sriramnarayanan.com/tags/layoffs">layoffs</a>
+                &middot;
+                
+                
+                <a class="article-category-link" href="http://www.sriramnarayanan.com/tags/migration">migration</a>
+                
+                
+            </div>
+            
+        
+    </div>
+</header>
+
+        <div class="article-entry" itemprop="articleBody">
+            <p>
+                <p>Today, I presented at Cloud Asia Singapore 2018 on the topic &ldquo;Migrating your IT policies to the Cloud&rdquo;.</p>
+
+<div class="embed slideshare">
+<iframe src="http://www.slideshare.net/slideshow/embed_code/key/ukaHptF8S02RqQ" width="599" height="487" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen> </iframe>
+</div>
+
+<p>Moving to the Cloud is more than just getting an account at a public cloud. Even a lift and shift approach needs quite some thought to the design.</p>
+            </p>
+            <p class="article-more-link">
+                <a href="http://www.sriramnarayanan.com/talk-migrating-your-it-policies-to-the-cloud/">
+                    Read more
+                </a>
+            </p>
+        </div>
+        <footer class="article-footer">
+    <a data-url="http://www.sriramnarayanan.com/talk-migrating-your-it-policies-to-the-cloud/" data-id="500d18d098ef9f01673114076b5ecb11" class="article-share-link">
+        <i class="fa fa-share"></i>
+        Share
+    </a>
+    
+
+    <script>
+    (function ($) {
+        
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+    </script>
+</footer>
+
+    </div>
+</article>
+
+<article class="article article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+        </a>
+
+        <header class="article-header">
+    <a href="http://www.sriramnarayanan.com/some-standup-anti-patterns/">
+    <h1 class="article-title" itemprop="name">
+        Some standup anti-patterns
+    </h1>
+    </a>
+    <div class="article-meta">
+
+        
+        <div class="article-date">
+            <i class="fa fa-calendar"></i>
+            <time datetime="2017-08-23 16:15:26 &#43;0800 &#43;08" itemprop="datePublished">2017-08-23</time>
+            &middot;
+            1050
+            words
+            &middot;
+            5
+            minute read
+        </div>
+        
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-folder"></i>
+                
+                
+                <a class="article-category-link" href="http://www.sriramnarayanan.com/categories/agile">agile</a>
+                
+                
+            </div>
+            
+        
+
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-tags"></i>
+                
+                
+                <a class="article-category-link" href="http://www.sriramnarayanan.com/tags/agile">agile</a>
+                &middot;
+                
+                
+                <a class="article-category-link" href="http://www.sriramnarayanan.com/tags/standups">standups</a>
+                
+                
+            </div>
+            
+        
+    </div>
+</header>
+
+        <div class="article-entry" itemprop="articleBody">
+            <p>
+                <p>Among the many practices that people start to follow when they decide to &ldquo;go agile&rdquo;, is the daily standup.</p>
+
+<p>Jason Yip&rsquo;s article on <a href="https://martinfowler.com/articles/itsNotJustStandingUp.html">standups</a> is often considered the reference article (that&rsquo;s me in the red t-shirt in that pic).</p>
+
+<p>Over the years, various organisations and teams have adopted the practice of a standup along with many other practices in the hopes of being Agile. As an outside observer, I often get to spot various anti-patterns in standup practices.</p>
+
+<p>Here are some standup anti-patterns to identify and address:</p>
+            </p>
+            <p class="article-more-link">
+                <a href="http://www.sriramnarayanan.com/some-standup-anti-patterns/">
+                    Read more
+                </a>
+            </p>
+        </div>
+        <footer class="article-footer">
+    <a data-url="http://www.sriramnarayanan.com/some-standup-anti-patterns/" data-id="ef9c9ad61c88601a9aca6b46aad5c522" class="article-share-link">
+        <i class="fa fa-share"></i>
+        Share
+    </a>
+    
+
+    <script>
+    (function ($) {
+        
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+    </script>
+</footer>
+
+    </div>
+</article>
 
 <article class="article article-type-post" itemscope="" itemprop="blogPost">
     <div class="article-inner">
@@ -566,6 +872,58 @@
             
             <li>
                 <div class="item-thumbnail">
+                    <a href="http://www.sriramnarayanan.com/talk-migrating-your-it-policies-to-the-cloud/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="http://www.sriramnarayanan.com/categories/management">
+                        management
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="http://www.sriramnarayanan.com/talk-migrating-your-it-policies-to-the-cloud/" class="title">Talk - Migrating your IT policies to the Cloud</a></p>
+                    <p class="item-date">
+                        <time datetime="2018-10-09 22:15:21 &#43;0800 &#43;08" itemprop="datePublished">2018-10-09</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="http://www.sriramnarayanan.com/some-standup-anti-patterns/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="http://www.sriramnarayanan.com/categories/agile">
+                        agile
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="http://www.sriramnarayanan.com/some-standup-anti-patterns/" class="title">Some standup anti-patterns</a></p>
+                    <p class="item-date">
+                        <time datetime="2017-08-23 16:15:26 &#43;0800 &#43;08" itemprop="datePublished">2017-08-23</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
                     <a href="http://www.sriramnarayanan.com/segregation-of-duties-and-continuous-delivery/" class="thumbnail">
                     
                         <span class="thumbnail-image thumbnail-none"></span>
@@ -610,17 +968,117 @@
     
 
 
+<div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+        <ul class="category-list">
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="http://www.sriramnarayanan.com/categories/agile">
+                    agile
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="http://www.sriramnarayanan.com/categories/management">
+                    management
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
 
 
 
     
 
 
+<div class="widget-wrap">
+    <h3 class="widget-title">
+        Tags
+    </h3>
+    <div class="widget">
+        <ul class="category-list">
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="http://www.sriramnarayanan.com/tags/agile">
+                    agile
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="http://www.sriramnarayanan.com/tags/cloud">
+                    cloud
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="http://www.sriramnarayanan.com/tags/layoffs">
+                    layoffs
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="http://www.sriramnarayanan.com/tags/migration">
+                    migration
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="http://www.sriramnarayanan.com/tags/standups">
+                    standups
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
 
 
 
     
 
+
+<div class="widget-wrap">
+    <h3 class="widget-title">
+        Tag cloud
+    </h3>
+    <div class="widget tagcloud">
+        
+        
+        <a href="http://www.sriramnarayanan.com/tags/agile" style="font-size: 12px;">agile</a>
+        
+        
+        <a href="http://www.sriramnarayanan.com/tags/cloud" style="font-size: 12px;">cloud</a>
+        
+        
+        <a href="http://www.sriramnarayanan.com/tags/layoffs" style="font-size: 12px;">layoffs</a>
+        
+        
+        <a href="http://www.sriramnarayanan.com/tags/migration" style="font-size: 12px;">migration</a>
+        
+        
+        <a href="http://www.sriramnarayanan.com/tags/standups" style="font-size: 12px;">standups</a>
+        
+    </div>
+</div>
 
 
 
@@ -644,14 +1102,24 @@
 
 
 <script type="application/javascript">
-var doNotTrack = false;
+var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+var doNotTrack = (dnt == "1" || dnt == "yes");
 if (!doNotTrack) {
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-40270825-1', 'auto');
-	
+	if (window.sessionStorage) {
+		var GA_SESSION_STORAGE_KEY = 'ga:clientId';
+		ga('create', 'UA-40270825-1', {
+	    'storage': 'none',
+	    'clientId': sessionStorage.getItem(GA_SESSION_STORAGE_KEY)
+	   });
+	   ga(function(tracker) {
+	    sessionStorage.setItem(GA_SESSION_STORAGE_KEY, tracker.get('clientId'));
+	   });
+   }
+	ga('set', 'anonymizeIp', true);
 	ga('send', 'pageview');
 }
 </script>

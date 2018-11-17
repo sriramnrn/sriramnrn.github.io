@@ -6,9 +6,55 @@
     <description>Recent content in Tags on Sriram Narayanan - The Sky is not the limit</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Wed, 23 Aug 2017 16:15:26 +0800</lastBuildDate>
     
 	<atom:link href="http://www.sriramnarayanan.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Agile</title>
+      <link>http://www.sriramnarayanan.com/tags/agile/</link>
+      <pubDate>Wed, 23 Aug 2017 16:15:26 +0800</pubDate>
+      
+      <guid>http://www.sriramnarayanan.com/tags/agile/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cloud</title>
+      <link>http://www.sriramnarayanan.com/tags/cloud/</link>
+      <pubDate>Tue, 09 Oct 2018 22:15:21 +0800</pubDate>
+      
+      <guid>http://www.sriramnarayanan.com/tags/cloud/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Layoffs</title>
+      <link>http://www.sriramnarayanan.com/tags/layoffs/</link>
+      <pubDate>Tue, 09 Oct 2018 22:15:21 +0800</pubDate>
+      
+      <guid>http://www.sriramnarayanan.com/tags/layoffs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Migration</title>
+      <link>http://www.sriramnarayanan.com/tags/migration/</link>
+      <pubDate>Tue, 09 Oct 2018 22:15:21 +0800</pubDate>
+      
+      <guid>http://www.sriramnarayanan.com/tags/migration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Standups</title>
+      <link>http://www.sriramnarayanan.com/tags/standups/</link>
+      <pubDate>Wed, 23 Aug 2017 16:15:26 +0800</pubDate>
+      
+      <guid>http://www.sriramnarayanan.com/tags/standups/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

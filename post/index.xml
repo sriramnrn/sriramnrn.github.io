@@ -12,6 +12,36 @@
     
     
     <item>
+      <title>Talk - Migrating your IT policies to the Cloud</title>
+      <link>http://www.sriramnarayanan.com/talk-migrating-your-it-policies-to-the-cloud/</link>
+      <pubDate>Tue, 09 Oct 2018 22:15:21 +0800</pubDate>
+      
+      <guid>http://www.sriramnarayanan.com/talk-migrating-your-it-policies-to-the-cloud/</guid>
+      <description>&lt;p&gt;Today, I presented at Cloud Asia Singapore 2018 on the topic &amp;ldquo;Migrating your IT policies to the Cloud&amp;rdquo;.&lt;/p&gt;
+
+&lt;div class=&#34;embed slideshare&#34;&gt;
+&lt;iframe src=&#34;http://www.slideshare.net/slideshow/embed_code/key/ukaHptF8S02RqQ&#34; width=&#34;599&#34; height=&#34;487&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px&#34; allowfullscreen webkitallowfullscreen mozallowfullscreen&gt; &lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Moving to the Cloud is more than just getting an account at a public cloud. Even a lift and shift approach needs quite some thought to the design.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Some standup anti-patterns</title>
+      <link>http://www.sriramnarayanan.com/some-standup-anti-patterns/</link>
+      <pubDate>Wed, 23 Aug 2017 16:15:26 +0800</pubDate>
+      
+      <guid>http://www.sriramnarayanan.com/some-standup-anti-patterns/</guid>
+      <description>&lt;p&gt;Among the many practices that people start to follow when they decide to &amp;ldquo;go agile&amp;rdquo;, is the daily standup.&lt;/p&gt;
+
+&lt;p&gt;Jason Yip&amp;rsquo;s article on &lt;a href=&#34;https://martinfowler.com/articles/itsNotJustStandingUp.html&#34;&gt;standups&lt;/a&gt; is often considered the reference article (that&amp;rsquo;s me in the red t-shirt in that pic).&lt;/p&gt;
+
+&lt;p&gt;Over the years, various organisations and teams have adopted the practice of a standup along with many other practices in the hopes of being Agile. As an outside observer, I often get to spot various anti-patterns in standup practices.&lt;/p&gt;
+
+&lt;p&gt;Here are some standup anti-patterns to identify and address:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>segregation of duties and continuous delivery</title>
       <link>http://www.sriramnarayanan.com/segregation-of-duties-and-continuous-delivery/</link>
       <pubDate>Thu, 23 Feb 2017 14:25:36 +0800</pubDate>
