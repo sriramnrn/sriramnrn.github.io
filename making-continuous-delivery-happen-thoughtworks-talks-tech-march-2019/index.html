@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>Making Continuous Delivery happen - ThoughtWorks Talks Tech March 2019 &middot; Sriram Narayanan - The Sky is not the limit</title>
+    <meta name="generator" content="Hugo 0.51" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Sriram Narayanan">
+    
+      <meta name="description" content="Ram&#39;s blog posts">
+    
+    
+    <link rel="canonical" href="http://www.sriramnarayanan.com/making-continuous-delivery-happen-thoughtworks-talks-tech-march-2019/"/>
+    <link rel="icon" href="http://www.sriramnarayanan.com/favicon.ico">
+    <link rel="apple-touch-icon" href="http://www.sriramnarayanan.com/apple-touch-icon.png"/>
+    <link rel="stylesheet" href="http://www.sriramnarayanan.com/css/style.css">
+    <link rel="stylesheet" href="http://www.sriramnarayanan.com/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://www.sriramnarayanan.com/css/monokai.css">
+    <link rel="stylesheet" href="http://www.sriramnarayanan.com/fancybox/jquery.fancybox.css">
+    
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+    <meta property="og:title" content="Making Continuous Delivery happen - ThoughtWorks Talks Tech March 2019" />
+<meta property="og:description" content="Yesterday, I presented on &ldquo;Making CD happen&rdquo; at the ThoughtWorks Talks Tech March 2019 edition at the ThoughtWorks Singapore office
+
+
+ 
+.
+
+I use slides to support my message, so there is sometimes context around the various slides.
+
+Over the past few years, organisations have been increasingly recognising that along with governance and project management (read, scrum), they need to pay attention to engineering practices too. The result has been an increasting move to achieve  Continuous Delivery (or &ldquo;CI/CD&rdquo; as it is unfortunately often also known).
+
+The reality is that the IT budget went into expensive scrum and &ldquo;CI/CD&rdquo; tool implementations, dedicated staff, and so on.
+
+With a plethora of tools and consultants, lots of tutorials and IT budgets assigned to such initiatives, there are a lot of implementations out there which are not yet delivering results.
+
+
+There are still defects in production
+There is a lot of wait-time between code-commit to go-live
+Triaging defects continues to take time
+Integration between workstreams continues to be risky
+Fixing a defect doesn’t guarantee that nothing else got broken
+Changes pushed to prod often leads to failures
+What works in one environment doesn’t work in others
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.sriramnarayanan.com/making-continuous-delivery-happen-thoughtworks-talks-tech-march-2019/" /><meta property="article:published_time" content="2019-03-28T23:25:36&#43;08:00"/>
+<meta property="article:modified_time" content="2019-03-28T23:25:36&#43;08:00"/>
+
+    
+    
+<meta itemprop="name" content="Making Continuous Delivery happen - ThoughtWorks Talks Tech March 2019">
+<meta itemprop="description" content="Yesterday, I presented on &ldquo;Making CD happen&rdquo; at the ThoughtWorks Talks Tech March 2019 edition at the ThoughtWorks Singapore office
+
+
+ 
+.
+
+I use slides to support my message, so there is sometimes context around the various slides.
+
+Over the past few years, organisations have been increasingly recognising that along with governance and project management (read, scrum), they need to pay attention to engineering practices too. The result has been an increasting move to achieve  Continuous Delivery (or &ldquo;CI/CD&rdquo; as it is unfortunately often also known).
+
+The reality is that the IT budget went into expensive scrum and &ldquo;CI/CD&rdquo; tool implementations, dedicated staff, and so on.
+
+With a plethora of tools and consultants, lots of tutorials and IT budgets assigned to such initiatives, there are a lot of implementations out there which are not yet delivering results.
+
+
+There are still defects in production
+There is a lot of wait-time between code-commit to go-live
+Triaging defects continues to take time
+Integration between workstreams continues to be risky
+Fixing a defect doesn’t guarantee that nothing else got broken
+Changes pushed to prod often leads to failures
+What works in one environment doesn’t work in others
+">
+
+
+<meta itemprop="datePublished" content="2019-03-28T23:25:36&#43;08:00" />
+<meta itemprop="dateModified" content="2019-03-28T23:25:36&#43;08:00" />
+<meta itemprop="wordCount" content="333">
+
+
+
+<meta itemprop="keywords" content="cd,cicd,continuousdelivery,agile," />
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Making Continuous Delivery happen - ThoughtWorks Talks Tech March 2019"/>
+<meta name="twitter:description" content="Yesterday, I presented on &ldquo;Making CD happen&rdquo; at the ThoughtWorks Talks Tech March 2019 edition at the ThoughtWorks Singapore office
+
+
+ 
+.
+
+I use slides to support my message, so there is sometimes context around the various slides.
+
+Over the past few years, organisations have been increasingly recognising that along with governance and project management (read, scrum), they need to pay attention to engineering practices too. The result has been an increasting move to achieve  Continuous Delivery (or &ldquo;CI/CD&rdquo; as it is unfortunately often also known).
+
+The reality is that the IT budget went into expensive scrum and &ldquo;CI/CD&rdquo; tool implementations, dedicated staff, and so on.
+
+With a plethora of tools and consultants, lots of tutorials and IT budgets assigned to such initiatives, there are a lot of implementations out there which are not yet delivering results.
+
+
+There are still defects in production
+There is a lot of wait-time between code-commit to go-live
+Triaging defects continues to take time
+Integration between workstreams continues to be risky
+Fixing a defect doesn’t guarantee that nothing else got broken
+Changes pushed to prod often leads to failures
+What works in one environment doesn’t work in others
+"/>
+<meta name="twitter:site" content="@sriramnrn"/>
+
+    
+
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+
+
+<div id="container">
+	<header id="header">
+  <div id="header-main" class="header-inner">
+    <div class="outer">
+      <a href="http://www.sriramnarayanan.com/" id="logo">
+          
+          <span class="site-title">Sriram Narayanan - The Sky is not the limit</span>
+      </a>
+      <nav id="main-nav">
+          
+          
+          <a class="main-nav-link" href="http://www.sriramnarayanan.com/">Home</a>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+
+          
+          <a class="main-nav-link" href="/about/"></a>
+          
+          <a class="main-nav-link" href="/books/"></a>
+          
+          <a class="main-nav-link" href="/post/">Posts</a>
+          
+
+          
+          
+          
+          
+          <a class="main-nav-link" href="http://www.sriramnarayanan.com/tags/">Tags</a>
+          
+          
+          
+          <a class="main-nav-link" href="http://www.sriramnarayanan.com/categories/">Categories</a>
+          
+          
+          
+          <a class="main-nav-link" href="http://www.sriramnarayanan.com/books/">Books</a>
+          
+          
+          
+          <a class="main-nav-link" href="http://www.sriramnarayanan.com/about/">About</a>
+          
+          
+      </nav>
+        <nav id="sub-nav">
+          <div class="profile" id="profile-nav">
+            <a id="profile-anchor" href="javascript:;"><img class="avatar" src="http://www.sriramnarayanan.com/css/images/stargate.jpeg"><i class="fa fa-caret-down"></i></a>
+          </div>
+        </nav>
+        <div id="search-form-wrap">
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
+              <input type="search" name="q" class="search-form-input" placeholder="Search">
+              <button type="submit" class="search-form-submit">
+              </button>
+              <input type="hidden" name="sitesearch" value="http://www.sriramnarayanan.com/" />
+         </form>
+        </div>
+    </div>
+  </div>
+  <div id="main-nav-mobile" class="header-sub header-inner">
+    <table class="menu outer">
+      <tbody>
+          <tr>
+          
+          
+          <td><a class="main-nav-link" href="http://www.sriramnarayanan.com/">Home</a></td>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+
+          
+          <td><a class="main-nav-link" href="/about/"></a></td>
+          
+          <td><a class="main-nav-link" href="/books/"></a></td>
+          
+          <td><a class="main-nav-link" href="/post/">Posts</a></td>
+          
+
+          
+          
+          
+          
+          <td><a class="main-nav-link" href="http://www.sriramnarayanan.com/tags/">Tags</a></td>
+          
+          
+          
+          <td><a class="main-nav-link" href="http://www.sriramnarayanan.com/categories/">Categories</a></td>
+          
+          
+          
+          <td><a class="main-nav-link" href="http://www.sriramnarayanan.com/books/">Books</a></td>
+          
+          
+          
+          <td><a class="main-nav-link" href="http://www.sriramnarayanan.com/about/">About</a></td>
+          
+          
+          <td>
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
+          <input type="search" name="q" class="search-form-input" placeholder="Search">
+          <input type="hidden" name="sitesearch" value="http://www.sriramnarayanan.com/" />
+          </form>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</header>
+
+   	
+   	<div class="outer">
+   	
+    	<aside id="profile">
+  <div class="inner profile-inner">
+    <div class="base-info profile-block">
+      
+      <img id="avatar" src="http://www.sriramnarayanan.com/css/images/stargate.jpeg">
+      
+      <h2 id="name">Sriram Narayanan</h2>
+      <h3 id="title">Cloud, DevOps, Security Consultant - Musician - Marksman - Belenix Developer</h3>
+      <span id="location"><i class="fa fa-map-marker"></i>Singapore</span>
+      
+          <a id="follow" href="https://twitter.com/sriramnrn">
+              Follow
+          </a>
+      
+    </div>
+    <div class="article-info profile-block">
+      <div class="article-info-block">
+        6
+        <span>Posts</span>
+      </div>
+      <div class="article-info-block">
+        
+          8
+        
+        <span>
+            Tags
+        </span>
+      </div>
+    </div>
+    <div class="profile-block social-links">
+      <table>
+        <tr>
+          
+<td><a href="//github.com/sriramnrn" target="_blank" title="GitHub"><i class="fa fa-github"></i></a></td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<td><a href="//youtube.com/sriramnrn" target="_blank" title="YouTube"><i class="fa fa-youtube"></i></a></td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<td><a href="//linkedin.com/in/sriramnrn" target="_blank" title="LinkedIn"><i class="fa fa-linkedin"></i></a></td>
+
+
+
+<td><a href="//slideshare.com/sriramnrn" target="_blank" title="SlideShare"><i class="fa fa-slideshare"></i></a></td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<td><a href="//twitter.com/sriramnrn" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></td>
+
+
+          <td><a href="http://www.sriramnarayanan.com/index.xml" target="_blank" title="RSS"><i class="fa fa-rss"></i></a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</aside>
+
+    
+
+    <section id="main">
+    
+    <article id="page-undefined" class="article article-type-page" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+
+        <header class="article-header">
+    <a href="http://www.sriramnarayanan.com/making-continuous-delivery-happen-thoughtworks-talks-tech-march-2019/">
+    <h1 class="article-title" itemprop="name">
+        Making Continuous Delivery happen - ThoughtWorks Talks Tech March 2019
+    </h1>
+    </a>
+    <div class="article-meta">
+
+        
+        <div class="article-date">
+            <i class="fa fa-calendar"></i>
+            <time datetime="2019-03-28 23:25:36 &#43;0800 &#43;08" itemprop="datePublished">2019-03-28</time>
+            &middot;
+            333
+            words
+            &middot;
+            2
+            minute read
+        </div>
+        
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-folder"></i>
+                
+                
+                <a class="article-category-link" href="http://www.sriramnarayanan.com/categories/continuous-delivery">continuous delivery</a>
+                
+                
+            </div>
+            
+        
+
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-tags"></i>
+                
+                
+                <a class="article-category-link" href="http://www.sriramnarayanan.com/tags/cd">cd</a>
+                &middot;
+                
+                
+                <a class="article-category-link" href="http://www.sriramnarayanan.com/tags/cicd">cicd</a>
+                &middot;
+                
+                
+                <a class="article-category-link" href="http://www.sriramnarayanan.com/tags/continuousdelivery">continuousdelivery</a>
+                &middot;
+                
+                
+                <a class="article-category-link" href="http://www.sriramnarayanan.com/tags/agile">agile</a>
+                
+                
+            </div>
+            
+        
+    </div>
+</header>
+
+        <div class="article-entry" itemprop="articleBody">
+            <p>Yesterday, I presented on &ldquo;Making CD happen&rdquo; at the ThoughtWorks Talks Tech March 2019 edition at the ThoughtWorks Singapore office</p>
+
+<p><div class="embed slideshare">
+<iframe src="http://www.slideshare.net/slideshow/embed_code/key/IAdleXumavC1DV" width="599" height="487" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen> </iframe>
+</div>.</p>
+
+<p>I use slides to support my message, so there is sometimes context around the various slides.</p>
+
+<p>Over the past few years, organisations have been increasingly recognising that along with governance and project management (read, scrum), they need to pay attention to engineering practices too. The result has been an increasting move to achieve  <a href="https://martinfowler.com/bliki/ContinuousDelivery.html">Continuous Delivery</a> (or &ldquo;CI/CD&rdquo; as it is unfortunately often also known).</p>
+
+<p>The reality is that the IT budget went into expensive scrum and &ldquo;CI/CD&rdquo; tool implementations, dedicated staff, and so on.</p>
+
+<p>With a plethora of tools and consultants, lots of tutorials and IT budgets assigned to such initiatives, there are a lot of implementations out there which are not yet delivering results.</p>
+
+<ul>
+<li>There are still defects in production</li>
+<li>There is a lot of wait-time between code-commit to go-live</li>
+<li>Triaging defects continues to take time</li>
+<li>Integration between workstreams continues to be risky</li>
+<li>Fixing a defect doesn’t guarantee that nothing else got broken</li>
+<li>Changes pushed to prod often leads to failures</li>
+<li>What works in one environment doesn’t work in others</li>
+</ul>
+
+<p>To quote from the Continous Delivery explanation at Martin&rsquo;s website (a informative 1 pager; he points us to Jez Humble&rsquo;s original website on <a href="https://www.continuousdelivery.com">Continuous Delivery</a> too):</p>
+
+<p>quote:</p>
+
+<p>You’re doing continuous delivery when: [1]</p>
+
+<ul>
+<li>Your software is deployable throughout its lifecycle</li>
+<li>Your team prioritizes keeping the software deployable over working on new features</li>
+<li>Anybody can get fast, automated feedback on the production readiness of their systems any time somebody makes a change to them</li>
+<li>You can perform push-button deployments of any version of the software to any environment on demand</li>
+</ul>
+
+<p>end quote</p>
+
+<p>In this talk, I covered some of what it takes to make Continuous Delivery happen.</p>
+
+<p>One cannot just install a CI server, link it with Jira, set up some jobs, and then declare &ldquo;CI/CD is in place!!&rdquo;. There is a lot of engineering, process optimisation and collaboration that is needed.</p>
+        </div>
+        <footer class="article-footer">
+    <a data-url="http://www.sriramnarayanan.com/making-continuous-delivery-happen-thoughtworks-talks-tech-march-2019/" data-id="1a59f29337195014c516080f492626d0" class="article-share-link">
+        <i class="fa fa-share"></i>
+        Share
+    </a>
+    
+
+    <script>
+    (function ($) {
+        
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+    </script>
+</footer>
+
+    </div>
+
+    
+<nav id="article-nav">
+    
+    <a href="http://www.sriramnarayanan.com/talk-migrating-your-it-policies-to-the-cloud/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">
+          Older
+      </strong>
+      <div class="article-nav-title">Talk - Migrating your IT policies to the Cloud</div>
+    </a>
+    
+
+    
+</nav>
+
+
+</article>
+
+
+
+    </section>
+
+   	
+    	<aside id="sidebar">
+    
+<div class="widget-wrap">
+    <h3 class="widget-title">
+        Recents
+    </h3>
+    <div class="widget">
+        <ul id="recent-post">
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="http://www.sriramnarayanan.com/making-continuous-delivery-happen-thoughtworks-talks-tech-march-2019/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="http://www.sriramnarayanan.com/categories/continuous-delivery">
+                        continuous delivery
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="http://www.sriramnarayanan.com/making-continuous-delivery-happen-thoughtworks-talks-tech-march-2019/" class="title">Making Continuous Delivery happen - ThoughtWorks Talks Tech March 2019</a></p>
+                    <p class="item-date">
+                        <time datetime="2019-03-28 23:25:36 &#43;0800 &#43;08" itemprop="datePublished">2019-03-28</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="http://www.sriramnarayanan.com/talk-migrating-your-it-policies-to-the-cloud/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="http://www.sriramnarayanan.com/categories/management">
+                        management
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="http://www.sriramnarayanan.com/talk-migrating-your-it-policies-to-the-cloud/" class="title">Talk - Migrating your IT policies to the Cloud</a></p>
+                    <p class="item-date">
+                        <time datetime="2018-10-09 22:15:21 &#43;0800 &#43;08" itemprop="datePublished">2018-10-09</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="http://www.sriramnarayanan.com/some-standup-anti-patterns/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="http://www.sriramnarayanan.com/categories/agile">
+                        agile
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="http://www.sriramnarayanan.com/some-standup-anti-patterns/" class="title">Some standup anti-patterns</a></p>
+                    <p class="item-date">
+                        <time datetime="2017-08-23 16:15:26 &#43;0800 &#43;08" itemprop="datePublished">2017-08-23</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="http://www.sriramnarayanan.com/talk-on-standups/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="http://www.sriramnarayanan.com/categories/agile">
+                        agile
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="http://www.sriramnarayanan.com/talk-on-standups/" class="title">Talk - On Standups</a></p>
+                    <p class="item-date">
+                        <time datetime="2017-08-23 16:15:26 &#43;0800 &#43;08" itemprop="datePublished">2017-08-23</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="http://www.sriramnarayanan.com/segregation-of-duties-and-continuous-delivery/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    
+                    <p class="item-title"><a href="http://www.sriramnarayanan.com/segregation-of-duties-and-continuous-delivery/" class="title">segregation of duties and continuous delivery</a></p>
+                    <p class="item-date">
+                        <time datetime="2017-02-23 14:25:36 &#43;0800 &#43;08" itemprop="datePublished">2017-02-23</time>
+                    </p>
+                </div>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+    
+
+
+<div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+        <ul class="category-list">
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="http://www.sriramnarayanan.com/categories/agile">
+                    agile
+                </a>
+                <span class="category-list-count">2</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="http://www.sriramnarayanan.com/categories/continuous-delivery">
+                    continuous-delivery
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="http://www.sriramnarayanan.com/categories/management">
+                    management
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+    
+
+
+<div class="widget-wrap">
+    <h3 class="widget-title">
+        Tags
+    </h3>
+    <div class="widget">
+        <ul class="category-list">
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="http://www.sriramnarayanan.com/tags/agile">
+                    agile
+                </a>
+                <span class="category-list-count">3</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="http://www.sriramnarayanan.com/tags/cd">
+                    cd
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="http://www.sriramnarayanan.com/tags/cicd">
+                    cicd
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="http://www.sriramnarayanan.com/tags/cloud">
+                    cloud
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="http://www.sriramnarayanan.com/tags/continuousdelivery">
+                    continuousdelivery
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="http://www.sriramnarayanan.com/tags/layoffs">
+                    layoffs
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="http://www.sriramnarayanan.com/tags/migration">
+                    migration
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="http://www.sriramnarayanan.com/tags/standups">
+                    standups
+                </a>
+                <span class="category-list-count">2</span>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+    
+
+
+<div class="widget-wrap">
+    <h3 class="widget-title">
+        Tag cloud
+    </h3>
+    <div class="widget tagcloud">
+        
+        
+        <a href="http://www.sriramnarayanan.com/tags/agile" style="font-size: 12px;">agile</a>
+        
+        
+        <a href="http://www.sriramnarayanan.com/tags/cd" style="font-size: 12px;">cd</a>
+        
+        
+        <a href="http://www.sriramnarayanan.com/tags/cicd" style="font-size: 12px;">cicd</a>
+        
+        
+        <a href="http://www.sriramnarayanan.com/tags/cloud" style="font-size: 12px;">cloud</a>
+        
+        
+        <a href="http://www.sriramnarayanan.com/tags/continuousdelivery" style="font-size: 12px;">continuousdelivery</a>
+        
+        
+        <a href="http://www.sriramnarayanan.com/tags/layoffs" style="font-size: 12px;">layoffs</a>
+        
+        
+        <a href="http://www.sriramnarayanan.com/tags/migration" style="font-size: 12px;">migration</a>
+        
+        
+        <a href="http://www.sriramnarayanan.com/tags/standups" style="font-size: 12px;">standups</a>
+        
+    </div>
+</div>
+
+
+
+
+
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+
+    
+	</div>
+</div>
+
+<footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019
+      Sriram Narayanan
+    </div>
+  </div>
+</footer>
+
+
+<script type="application/javascript">
+var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+var doNotTrack = (dnt == "1" || dnt == "yes");
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	if (window.sessionStorage) {
+		var GA_SESSION_STORAGE_KEY = 'ga:clientId';
+		ga('create', 'UA-40270825-1', {
+	    'storage': 'none',
+	    'clientId': sessionStorage.getItem(GA_SESSION_STORAGE_KEY)
+	   });
+	   ga(function(tracker) {
+	    sessionStorage.setItem(GA_SESSION_STORAGE_KEY, tracker.get('clientId'));
+	   });
+   }
+	ga('set', 'anonymizeIp', true);
+	ga('send', 'pageview');
+}
+</script>
+
+<script src="http://www.sriramnarayanan.com/fancybox/jquery.fancybox.pack.js"></script>
+<script src="http://www.sriramnarayanan.com/js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']]}
+  });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+
+
+</body>
+</html>

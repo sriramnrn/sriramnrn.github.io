@@ -6,32 +6,40 @@
     <description>Recent content in Continuousdelivery on Sriram Narayanan - The Sky is not the limit</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 28 Mar 2019 19:25:36 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 28 Mar 2019 23:25:36 +0800</lastBuildDate>
     
 	<atom:link href="http://www.sriramnarayanan.com/tags/continuousdelivery/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>making cd happen - ThoughtWorks Talks tech</title>
-      <link>http://www.sriramnarayanan.com/making-cd-happen-thoughtworks-talks-tech/</link>
-      <pubDate>Thu, 28 Mar 2019 19:25:36 +0800</pubDate>
+      <title>Making Continuous Delivery happen - ThoughtWorks Talks Tech March 2019</title>
+      <link>http://www.sriramnarayanan.com/making-continuous-delivery-happen-thoughtworks-talks-tech-march-2019/</link>
+      <pubDate>Thu, 28 Mar 2019 23:25:36 +0800</pubDate>
       
-      <guid>http://www.sriramnarayanan.com/making-cd-happen-thoughtworks-talks-tech/</guid>
-      <description>&lt;p&gt;Today, I presented on &amp;ldquo;Segregation of Duties and Continuous Delivery&amp;rdquo; at the DevSecCon Singapore 2017.&lt;/p&gt;
+      <guid>http://www.sriramnarayanan.com/making-continuous-delivery-happen-thoughtworks-talks-tech-march-2019/</guid>
+      <description>&lt;p&gt;Yesterday, I presented on &amp;ldquo;Making CD happen&amp;rdquo; at the ThoughtWorks Talks Tech March 2019 edition at the ThoughtWorks Singapore office&lt;/p&gt;
 
-&lt;div class=&#34;embed slideshare&#34;&gt;
-&lt;iframe src=&#34;http://www.slideshare.net/slideshow/embed_code/key/vHeYikkW2pCi9J&#34; width=&#34;599&#34; height=&#34;487&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px&#34; allowfullscreen webkitallowfullscreen mozallowfullscreen&gt; &lt;/iframe&gt;
-&lt;/div&gt;
+&lt;p&gt;&lt;div class=&#34;embed slideshare&#34;&gt;
+&lt;iframe src=&#34;http://www.slideshare.net/slideshow/embed_code/key/IAdleXumavC1DV&#34; width=&#34;599&#34; height=&#34;487&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px&#34; allowfullscreen webkitallowfullscreen mozallowfullscreen&gt; &lt;/iframe&gt;
+&lt;/div&gt;.&lt;/p&gt;
 
-&lt;p&gt;The talk was well received.&lt;/p&gt;
+&lt;p&gt;I use slides to support my message, so there is sometimes context around the various slides.&lt;/p&gt;
 
-&lt;p&gt;As per the wikipedia article on [&lt;a href=&#34;https://en.wikipedia.org/wiki/Separation_of_duties&#34;&gt;https://en.wikipedia.org/wiki/Separation_of_duties&lt;/a&gt;], &amp;ldquo; In business the separation by sharing of more than one individual in one single task is an internal control intended to prevent fraud and error.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Over the past few years, organisations have been increasingly recognising that along with governance and project management (read, scrum), they need to pay attention to engineering practices too. The result has been an increasting move to achieve  &lt;a href=&#34;https://martinfowler.com/bliki/ContinuousDelivery.html&#34;&gt;Continuous Delivery&lt;/a&gt; (or &amp;ldquo;CI/CD&amp;rdquo; as it is unfortunately often also known).&lt;/p&gt;
 
-&lt;p&gt;In the I.T. space, the approaches for implementing Segregation of Duties are very defensive in nature. While the objectives of SoD are arguably achieved, the present enforcement approaches slow down the overall time from code commit to production deployment. This prevent effective Continuous Delivery.&lt;/p&gt;
+&lt;p&gt;The reality is that the IT budget went into expensive scrum and &amp;ldquo;CI/CD&amp;rdquo; tool implementations, dedicated staff, and so on.&lt;/p&gt;
 
-&lt;p&gt;In my talk, I present the intent, the current approaches, and my recommended alternative approaches.&lt;/p&gt;
+&lt;p&gt;With a plethora of tools and consultants, lots of tutorials and IT budgets assigned to such initiatives, there are a lot of implementations out there which are not yet delivering results.&lt;/p&gt;
 
-&lt;p&gt;This talk with be one of the chapters of my upcoming book on Security and Continuous Delivery.&lt;/p&gt;</description>
+&lt;ul&gt;
+&lt;li&gt;There are still defects in production&lt;/li&gt;
+&lt;li&gt;There is a lot of wait-time between code-commit to go-live&lt;/li&gt;
+&lt;li&gt;Triaging defects continues to take time&lt;/li&gt;
+&lt;li&gt;Integration between workstreams continues to be risky&lt;/li&gt;
+&lt;li&gt;Fixing a defect doesn’t guarantee that nothing else got broken&lt;/li&gt;
+&lt;li&gt;Changes pushed to prod often leads to failures&lt;/li&gt;
+&lt;li&gt;What works in one environment doesn’t work in others&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     
   </channel>
