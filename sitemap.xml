@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://www.sriramnarayanan.com/making-cd-happen-thoughtworks-talks-tech/</loc>
+    <lastmod>2019-03-28T19:25:36+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.sriramnarayanan.com/talk-migrating-your-it-policies-to-the-cloud/</loc>
     <lastmod>2018-10-09T22:15:21+08:00</lastmod>
   </url>
@@ -37,7 +42,7 @@
   
   <url>
     <loc>http://www.sriramnarayanan.com/tags/agile/</loc>
-    <lastmod>2017-08-23T16:15:26+08:00</lastmod>
+    <lastmod>2019-03-28T19:25:36+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -54,8 +59,32 @@
   </url>
   
   <url>
+    <loc>http://www.sriramnarayanan.com/tags/cd/</loc>
+    <lastmod>2019-03-28T19:25:36+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.sriramnarayanan.com/tags/cicd/</loc>
+    <lastmod>2019-03-28T19:25:36+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://www.sriramnarayanan.com/tags/cloud/</loc>
     <lastmod>2018-10-09T22:15:21+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.sriramnarayanan.com/categories/continuous-delivery/</loc>
+    <lastmod>2019-03-28T19:25:36+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.sriramnarayanan.com/tags/continuousdelivery/</loc>
+    <lastmod>2019-03-28T19:25:36+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -79,7 +108,7 @@
   
   <url>
     <loc>http://www.sriramnarayanan.com/post/</loc>
-    <lastmod>2018-10-09T22:15:21+08:00</lastmod>
+    <lastmod>2019-03-28T19:25:36+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -90,7 +119,7 @@
   
   <url>
     <loc>http://www.sriramnarayanan.com/</loc>
-    <lastmod>2018-10-09T22:15:21+08:00</lastmod>
+    <lastmod>2019-03-28T19:25:36+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -102,7 +131,7 @@
   
   <url>
     <loc>http://www.sriramnarayanan.com/tags/</loc>
-    <lastmod>2017-08-23T16:15:26+08:00</lastmod>
+    <lastmod>2019-03-28T19:25:36+08:00</lastmod>
     <priority>0</priority>
   </url>
   

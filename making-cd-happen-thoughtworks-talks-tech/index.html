@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-    <title>Talk - On Standups &middot; Sriram Narayanan - The Sky is not the limit</title>
+    <title>making cd happen - ThoughtWorks Talks tech &middot; Sriram Narayanan - The Sky is not the limit</title>
     <meta name="generator" content="Hugo 0.51" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -10,7 +10,7 @@
       <meta name="description" content="Ram&#39;s blog posts">
     
     
-    <link rel="canonical" href="http://www.sriramnarayanan.com/talk-on-standups/"/>
+    <link rel="canonical" href="http://www.sriramnarayanan.com/making-cd-happen-thoughtworks-talks-tech/"/>
     <link rel="icon" href="http://www.sriramnarayanan.com/favicon.ico">
     <link rel="apple-touch-icon" href="http://www.sriramnarayanan.com/apple-touch-icon.png"/>
     <link rel="stylesheet" href="http://www.sriramnarayanan.com/css/style.css">
@@ -20,32 +20,71 @@
     
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
-    <meta property="og:title" content="Talk - On Standups" />
-<meta property="og:description" content="Here is the slide deck to a popular talk that I give on standups. I recommend that you also read the accompanying article.
-  " />
+    <meta property="og:title" content="making cd happen - ThoughtWorks Talks tech" />
+<meta property="og:description" content="Today, I presented on &ldquo;Segregation of Duties and Continuous Delivery&rdquo; at the DevSecCon Singapore 2017.
+
+
+ 
+
+
+The talk was well received.
+
+As per the wikipedia article on [https://en.wikipedia.org/wiki/Separation_of_duties], &ldquo; In business the separation by sharing of more than one individual in one single task is an internal control intended to prevent fraud and error.&rdquo;
+
+In the I.T. space, the approaches for implementing Segregation of Duties are very defensive in nature. While the objectives of SoD are arguably achieved, the present enforcement approaches slow down the overall time from code commit to production deployment. This prevent effective Continuous Delivery.
+
+In my talk, I present the intent, the current approaches, and my recommended alternative approaches.
+
+This talk with be one of the chapters of my upcoming book on Security and Continuous Delivery." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://www.sriramnarayanan.com/talk-on-standups/" /><meta property="article:published_time" content="2017-08-23T16:15:26&#43;08:00"/>
-<meta property="article:modified_time" content="2017-08-23T16:15:26&#43;08:00"/>
+<meta property="og:url" content="http://www.sriramnarayanan.com/making-cd-happen-thoughtworks-talks-tech/" /><meta property="article:published_time" content="2019-03-28T19:25:36&#43;08:00"/>
+<meta property="article:modified_time" content="2019-03-28T19:25:36&#43;08:00"/>
 
     
     
-<meta itemprop="name" content="Talk - On Standups">
-<meta itemprop="description" content="Here is the slide deck to a popular talk that I give on standups. I recommend that you also read the accompanying article.
-  ">
+<meta itemprop="name" content="making cd happen - ThoughtWorks Talks tech">
+<meta itemprop="description" content="Today, I presented on &ldquo;Segregation of Duties and Continuous Delivery&rdquo; at the DevSecCon Singapore 2017.
 
 
-<meta itemprop="datePublished" content="2017-08-23T16:15:26&#43;08:00" />
-<meta itemprop="dateModified" content="2017-08-23T16:15:26&#43;08:00" />
-<meta itemprop="wordCount" content="23">
+ 
+
+
+The talk was well received.
+
+As per the wikipedia article on [https://en.wikipedia.org/wiki/Separation_of_duties], &ldquo; In business the separation by sharing of more than one individual in one single task is an internal control intended to prevent fraud and error.&rdquo;
+
+In the I.T. space, the approaches for implementing Segregation of Duties are very defensive in nature. While the objectives of SoD are arguably achieved, the present enforcement approaches slow down the overall time from code commit to production deployment. This prevent effective Continuous Delivery.
+
+In my talk, I present the intent, the current approaches, and my recommended alternative approaches.
+
+This talk with be one of the chapters of my upcoming book on Security and Continuous Delivery.">
+
+
+<meta itemprop="datePublished" content="2019-03-28T19:25:36&#43;08:00" />
+<meta itemprop="dateModified" content="2019-03-28T19:25:36&#43;08:00" />
+<meta itemprop="wordCount" content="129">
 
 
 
-<meta itemprop="keywords" content="agile,standups," />
+<meta itemprop="keywords" content="cd,cicd,continuousdelivery,agile," />
 
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Talk - On Standups"/>
-<meta name="twitter:description" content="Here is the slide deck to a popular talk that I give on standups. I recommend that you also read the accompanying article.
-  "/>
+<meta name="twitter:title" content="making cd happen - ThoughtWorks Talks tech"/>
+<meta name="twitter:description" content="Today, I presented on &ldquo;Segregation of Duties and Continuous Delivery&rdquo; at the DevSecCon Singapore 2017.
+
+
+ 
+
+
+The talk was well received.
+
+As per the wikipedia article on [https://en.wikipedia.org/wiki/Separation_of_duties], &ldquo; In business the separation by sharing of more than one individual in one single task is an internal control intended to prevent fraud and error.&rdquo;
+
+In the I.T. space, the approaches for implementing Segregation of Duties are very defensive in nature. While the objectives of SoD are arguably achieved, the present enforcement approaches slow down the overall time from code commit to production deployment. This prevent effective Continuous Delivery.
+
+In my talk, I present the intent, the current approaches, and my recommended alternative approaches.
+
+This talk with be one of the chapters of my upcoming book on Security and Continuous Delivery."/>
 <meta name="twitter:site" content="@sriramnrn"/>
 
     
@@ -295,9 +334,9 @@
         
 
         <header class="article-header">
-    <a href="http://www.sriramnarayanan.com/talk-on-standups/">
+    <a href="http://www.sriramnarayanan.com/making-cd-happen-thoughtworks-talks-tech/">
     <h1 class="article-title" itemprop="name">
-        Talk - On Standups
+        making cd happen - ThoughtWorks Talks tech
     </h1>
     </a>
     <div class="article-meta">
@@ -305,9 +344,9 @@
         
         <div class="article-date">
             <i class="fa fa-calendar"></i>
-            <time datetime="2017-08-23 16:15:26 &#43;0800 &#43;08" itemprop="datePublished">2017-08-23</time>
+            <time datetime="2019-03-28 19:25:36 &#43;0800 &#43;08" itemprop="datePublished">2019-03-28</time>
             &middot;
-            23
+            129
             words
             &middot;
             1
@@ -321,7 +360,7 @@
                 <i class="fa fa-folder"></i>
                 
                 
-                <a class="article-category-link" href="http://www.sriramnarayanan.com/categories/agile">agile</a>
+                <a class="article-category-link" href="http://www.sriramnarayanan.com/categories/continuous-delivery">continuous delivery</a>
                 
                 
             </div>
@@ -335,11 +374,19 @@
                 <i class="fa fa-tags"></i>
                 
                 
-                <a class="article-category-link" href="http://www.sriramnarayanan.com/tags/agile">agile</a>
+                <a class="article-category-link" href="http://www.sriramnarayanan.com/tags/cd">cd</a>
                 &middot;
                 
                 
-                <a class="article-category-link" href="http://www.sriramnarayanan.com/tags/standups">standups</a>
+                <a class="article-category-link" href="http://www.sriramnarayanan.com/tags/cicd">cicd</a>
+                &middot;
+                
+                
+                <a class="article-category-link" href="http://www.sriramnarayanan.com/tags/continuousdelivery">continuousdelivery</a>
+                &middot;
+                
+                
+                <a class="article-category-link" href="http://www.sriramnarayanan.com/tags/agile">agile</a>
                 
                 
             </div>
@@ -349,15 +396,24 @@
 </header>
 
         <div class="article-entry" itemprop="articleBody">
-            <p>Here is the slide deck to a popular talk that I give on standups. I recommend that you also read the <a href="http://www.sriramnarayanan.com/some-standup-anti-patterns/">accompanying article</a>.</p>
+            <p>Today, I presented on &ldquo;Segregation of Duties and Continuous Delivery&rdquo; at the DevSecCon Singapore 2017.</p>
 
 <div class="embed slideshare">
-<iframe src="http://www.slideshare.net/slideshow/embed_code/key/1mwQUAnSWMouyy" width="599" height="487" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen> </iframe>
+<iframe src="http://www.slideshare.net/slideshow/embed_code/key/vHeYikkW2pCi9J" width="599" height="487" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen> </iframe>
 </div>
 
+<p>The talk was well received.</p>
+
+<p>As per the wikipedia article on [<a href="https://en.wikipedia.org/wiki/Separation_of_duties">https://en.wikipedia.org/wiki/Separation_of_duties</a>], &ldquo; In business the separation by sharing of more than one individual in one single task is an internal control intended to prevent fraud and error.&rdquo;</p>
+
+<p>In the I.T. space, the approaches for implementing Segregation of Duties are very defensive in nature. While the objectives of SoD are arguably achieved, the present enforcement approaches slow down the overall time from code commit to production deployment. This prevent effective Continuous Delivery.</p>
+
+<p>In my talk, I present the intent, the current approaches, and my recommended alternative approaches.</p>
+
+<p>This talk with be one of the chapters of my upcoming book on Security and Continuous Delivery.</p>
         </div>
         <footer class="article-footer">
-    <a data-url="http://www.sriramnarayanan.com/talk-on-standups/" data-id="65656769976d62e0b61ba0767ff77794" class="article-share-link">
+    <a data-url="http://www.sriramnarayanan.com/making-cd-happen-thoughtworks-talks-tech/" data-id="1a59f29337195014c516080f492626d0" class="article-share-link">
         <i class="fa fa-share"></i>
         Share
     </a>
@@ -434,21 +490,14 @@
     
 <nav id="article-nav">
     
-    <a href="http://www.sriramnarayanan.com/segregation-of-duties-and-continuous-delivery/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="http://www.sriramnarayanan.com/talk-migrating-your-it-policies-to-the-cloud/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">
           Older
       </strong>
-      <div class="article-nav-title">segregation of duties and continuous delivery</div>
+      <div class="article-nav-title">Talk - Migrating your IT policies to the Cloud</div>
     </a>
     
 
-    
-    <a href="http://www.sriramnarayanan.com/some-standup-anti-patterns/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">
-          Newer
-      </strong>
-      <div class="article-nav-title">Some standup anti-patterns</div>
-    </a>
     
 </nav>
 

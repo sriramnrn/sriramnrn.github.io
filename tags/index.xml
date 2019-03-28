@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Sriram Narayanan - The Sky is not the limit</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 23 Aug 2017 16:15:26 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 28 Mar 2019 19:25:36 +0800</lastBuildDate>
     
 	<atom:link href="http://www.sriramnarayanan.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,27 @@
     <item>
       <title>Agile</title>
       <link>http://www.sriramnarayanan.com/tags/agile/</link>
-      <pubDate>Wed, 23 Aug 2017 16:15:26 +0800</pubDate>
+      <pubDate>Thu, 28 Mar 2019 19:25:36 +0800</pubDate>
       
       <guid>http://www.sriramnarayanan.com/tags/agile/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cd</title>
+      <link>http://www.sriramnarayanan.com/tags/cd/</link>
+      <pubDate>Thu, 28 Mar 2019 19:25:36 +0800</pubDate>
+      
+      <guid>http://www.sriramnarayanan.com/tags/cd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cicd</title>
+      <link>http://www.sriramnarayanan.com/tags/cicd/</link>
+      <pubDate>Thu, 28 Mar 2019 19:25:36 +0800</pubDate>
+      
+      <guid>http://www.sriramnarayanan.com/tags/cicd/</guid>
       <description></description>
     </item>
     
@@ -26,6 +44,15 @@
       <pubDate>Tue, 09 Oct 2018 22:15:21 +0800</pubDate>
       
       <guid>http://www.sriramnarayanan.com/tags/cloud/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Continuousdelivery</title>
+      <link>http://www.sriramnarayanan.com/tags/continuousdelivery/</link>
+      <pubDate>Thu, 28 Mar 2019 19:25:36 +0800</pubDate>
+      
+      <guid>http://www.sriramnarayanan.com/tags/continuousdelivery/</guid>
       <description></description>
     </item>
     
