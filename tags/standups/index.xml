@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Standups on Sriram Narayanan - The Sky is not the limit</title>
-    <link>http://www.sriramnarayanan.com/tags/standups/</link>
+    <link>https://www.sriramnarayanan.com/tags/standups/</link>
     <description>Recent content in Standups on Sriram Narayanan - The Sky is not the limit</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 23 Aug 2017 16:15:26 +0800</lastBuildDate>
     
-	<atom:link href="http://www.sriramnarayanan.com/tags/standups/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.sriramnarayanan.com/tags/standups/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Some standup anti-patterns</title>
-      <link>http://www.sriramnarayanan.com/some-standup-anti-patterns/</link>
+      <link>https://www.sriramnarayanan.com/some-standup-anti-patterns/</link>
       <pubDate>Wed, 23 Aug 2017 16:15:26 +0800</pubDate>
       
-      <guid>http://www.sriramnarayanan.com/some-standup-anti-patterns/</guid>
-      <description>&lt;p&gt;See my &lt;a href=&#34;http://www.sriramnarayanan.com/talk-on-standups/&#34;&gt;slide deck&lt;/a&gt; that I usually use when giving a talk on this topic.&lt;/p&gt;
+      <guid>https://www.sriramnarayanan.com/some-standup-anti-patterns/</guid>
+      <description>&lt;p&gt;See my &lt;a href=&#34;https://www.sriramnarayanan.com/talk-on-standups/&#34;&gt;slide deck&lt;/a&gt; that I usually use when giving a talk on this topic.&lt;/p&gt;
 
 &lt;p&gt;Among the many practices that people start to follow when they decide to &amp;ldquo;go agile&amp;rdquo;, is the daily standup.&lt;/p&gt;
 
@@ -30,10 +30,10 @@
     
     <item>
       <title>Talk - On Standups</title>
-      <link>http://www.sriramnarayanan.com/talk-on-standups/</link>
+      <link>https://www.sriramnarayanan.com/talk-on-standups/</link>
       <pubDate>Wed, 23 Aug 2017 16:15:26 +0800</pubDate>
       
-      <guid>http://www.sriramnarayanan.com/talk-on-standups/</guid>
+      <guid>https://www.sriramnarayanan.com/talk-on-standups/</guid>
       <description>Here is the slide deck to a popular talk that I give on standups. I recommend that you also read the accompanying article.
   </description>
     </item>
